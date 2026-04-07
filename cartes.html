@@ -41,16 +41,18 @@
     .row {
         display: flex;
         justify-content: space-around;
+        border-top: 0.1mm solid #fff;
+        border-bottom: 0.1mm solid #fff;
     }
 
     .card {
       background-color: #fff;
         width: 85mm;
         height: 55mm;
-        box-sizing: content-box;  /* border OUTSIDE 85x55mm */
         position: relative;
         font-size: 6mm;
-        border: 0.1mm solid #fff;
+        border-left: 0.1mm solid #fff;
+        border-right: 0.1mm solid #fff;
     }
 
     /* ===== FRONT (RECTO) ===== */
@@ -82,10 +84,11 @@
     }
 
     .motto {
+      font-family: Garamond, serif;
       max-width: 100%;
       font-style: italic;
       font-weight: 100;
-      letter-spacing: 0.15em;
+      letter-spacing: 0.07em;
       line-height: 110%;
     }
 
@@ -111,6 +114,10 @@
     /* ===== BACK (VERSO) ===== */
 
     .card.back {
+      border-color: #000;
+    }
+
+    #page-back .row {
       border-color: #000;
     }
 
